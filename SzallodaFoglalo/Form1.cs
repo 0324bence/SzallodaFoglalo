@@ -500,58 +500,13 @@ namespace SzallodaFoglalo
             Font boldFont = new Font(dataGridView1.Font, FontStyle.Bold);
             dataGridView1.Columns[0].Width = 80;
             
-            dataGridView1.Rows[0].Cells[dataGridView1.ColumnCount - 32].Style.BackColor = Color.FromArgb(188, 223, 227);
-            dataGridView1.Rows[1].Cells[dataGridView1.ColumnCount - 32].Style.BackColor = Color.FromArgb(188, 223, 227);
-            dataGridView1.Rows[2].Cells[dataGridView1.ColumnCount - 32].Style.BackColor = Color.FromArgb(188, 223, 227);
-            dataGridView1.Rows[3].Cells[dataGridView1.ColumnCount - 32].Style.BackColor = Color.FromArgb(188, 223, 227);
-            dataGridView1.Rows[4].Cells[dataGridView1.ColumnCount - 32].Style.BackColor = Color.FromArgb(188, 223, 227);
-            dataGridView1.Rows[5].Cells[dataGridView1.ColumnCount - 32].Style.BackColor = Color.FromArgb(188, 223, 227);
-            dataGridView1.Rows[6].Cells[dataGridView1.ColumnCount - 32].Style.BackColor = Color.FromArgb(188, 223, 227);
-            dataGridView1.Rows[7].Cells[dataGridView1.ColumnCount - 32].Style.BackColor = Color.FromArgb(188, 223, 227);
-            dataGridView1.Rows[8].Cells[dataGridView1.ColumnCount - 32].Style.BackColor = Color.FromArgb(188, 223, 227);
-            dataGridView1.Rows[9].Cells[dataGridView1.ColumnCount - 32].Style.BackColor = Color.FromArgb(188, 223, 227);
-            dataGridView1.Rows[10].Cells[dataGridView1.ColumnCount - 32].Style.BackColor = Color.FromArgb(188, 223, 227);
-            dataGridView1.Rows[11].Cells[dataGridView1.ColumnCount - 32].Style.BackColor = Color.FromArgb(188, 223, 227);
+            for (int i=0; i < 12; ++i)
+            {
+                dataGridView1.Rows[i].Cells[dataGridView1.ColumnCount - 32].Style.BackColor = Color.FromArgb(188, 223, 227);
+                dataGridView1.Rows[i].Cells[dataGridView1.ColumnCount - 32].Style.ForeColor = Color.FromArgb(37, 35, 78);
+                dataGridView1.Rows[i].Cells[dataGridView1.ColumnCount - 32].Style.Font = new Font("Microsoft YaHei", 10);
+            }
 
-            dataGridView1.Rows[0].Cells[dataGridView1.ColumnCount - 32].Style.ForeColor = Color.FromArgb(37, 35, 78);
-            dataGridView1.Rows[1].Cells[dataGridView1.ColumnCount - 32].Style.ForeColor = Color.FromArgb(37, 35, 78);
-            dataGridView1.Rows[2].Cells[dataGridView1.ColumnCount - 32].Style.ForeColor = Color.FromArgb(37, 35, 78);
-            dataGridView1.Rows[3].Cells[dataGridView1.ColumnCount - 32].Style.ForeColor = Color.FromArgb(37, 35, 78);
-            dataGridView1.Rows[4].Cells[dataGridView1.ColumnCount - 32].Style.ForeColor = Color.FromArgb(37, 35, 78);
-            dataGridView1.Rows[5].Cells[dataGridView1.ColumnCount - 32].Style.ForeColor = Color.FromArgb(37, 35, 78);
-            dataGridView1.Rows[6].Cells[dataGridView1.ColumnCount - 32].Style.ForeColor = Color.FromArgb(37, 35, 78);
-            dataGridView1.Rows[7].Cells[dataGridView1.ColumnCount - 32].Style.ForeColor = Color.FromArgb(37, 35, 78);
-            dataGridView1.Rows[8].Cells[dataGridView1.ColumnCount - 32].Style.ForeColor = Color.FromArgb(37, 35, 78);
-            dataGridView1.Rows[9].Cells[dataGridView1.ColumnCount - 32].Style.ForeColor = Color.FromArgb(37, 35, 78);
-            dataGridView1.Rows[10].Cells[dataGridView1.ColumnCount - 32].Style.ForeColor = Color.FromArgb(37, 35, 78);
-            dataGridView1.Rows[11].Cells[dataGridView1.ColumnCount - 32].Style.ForeColor = Color.FromArgb(37, 35, 78);
-
-            dataGridView1.Rows[0].Cells[dataGridView1.ColumnCount - 32].Style.Font = new Font("Microsoft YaHei", 10);
-            dataGridView1.Rows[1].Cells[dataGridView1.ColumnCount - 32].Style.Font = new Font("Microsoft YaHei", 10);
-            dataGridView1.Rows[2].Cells[dataGridView1.ColumnCount - 32].Style.Font = new Font("Microsoft YaHei", 10);
-            dataGridView1.Rows[3].Cells[dataGridView1.ColumnCount - 32].Style.Font = new Font("Microsoft YaHei", 10);
-            dataGridView1.Rows[4].Cells[dataGridView1.ColumnCount - 32].Style.Font = new Font("Microsoft YaHei", 10);
-            dataGridView1.Rows[5].Cells[dataGridView1.ColumnCount - 32].Style.Font = new Font("Microsoft YaHei", 10);
-            dataGridView1.Rows[6].Cells[dataGridView1.ColumnCount - 32].Style.Font = new Font("Microsoft YaHei", 10);
-            dataGridView1.Rows[7].Cells[dataGridView1.ColumnCount - 32].Style.Font = new Font("Microsoft YaHei", 10);
-            dataGridView1.Rows[8].Cells[dataGridView1.ColumnCount - 32].Style.Font = new Font("Microsoft YaHei", 10);
-            dataGridView1.Rows[9].Cells[dataGridView1.ColumnCount - 32].Style.Font = new Font("Microsoft YaHei", 10);
-            dataGridView1.Rows[10].Cells[dataGridView1.ColumnCount - 32].Style.Font = new Font("Microsoft YaHei", 10);
-            dataGridView1.Rows[11].Cells[dataGridView1.ColumnCount - 32].Style.Font = new Font("Microsoft YaHei", 10);
-            /*
-            dataGridView1.Rows[0].Cells[dataGridView1.ColumnCount - 32].Style.Font = boldFont;
-            dataGridView1.Rows[1].Cells[dataGridView1.ColumnCount - 32].Style.Font = boldFont;
-            dataGridView1.Rows[2].Cells[dataGridView1.ColumnCount - 32].Style.Font = boldFont;
-            dataGridView1.Rows[3].Cells[dataGridView1.ColumnCount - 32].Style.Font = boldFont;
-            dataGridView1.Rows[4].Cells[dataGridView1.ColumnCount - 32].Style.Font = boldFont;
-            dataGridView1.Rows[5].Cells[dataGridView1.ColumnCount - 32].Style.Font = boldFont;
-            dataGridView1.Rows[6].Cells[dataGridView1.ColumnCount - 32].Style.Font = boldFont;
-            dataGridView1.Rows[7].Cells[dataGridView1.ColumnCount - 32].Style.Font = boldFont;
-            dataGridView1.Rows[8].Cells[dataGridView1.ColumnCount - 32].Style.Font = boldFont; 
-            dataGridView1.Rows[9].Cells[dataGridView1.ColumnCount - 32].Style.Font = boldFont;
-            dataGridView1.Rows[10].Cells[dataGridView1.ColumnCount - 32].Style.Font = boldFont;
-            dataGridView1.Rows[11].Cells[dataGridView1.ColumnCount - 32].Style.Font = boldFont;
-            */
             #endregion
             #region feb
             // Az első sor utolsó cellájának törlése
