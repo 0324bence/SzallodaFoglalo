@@ -83,7 +83,7 @@ namespace SzallodaFoglalo
             #endregion
             comboBox2.SelectedIndexChanged += ujevek;
             comboBox1.SelectedIndexChanged += comboBox1_DropDownClosed;
-            dataGridView1.CellClick += cell_click;
+            // dataGridView1.CellClick += cell_click;
         }
 
         private void fileBeolvasasa()
@@ -173,6 +173,7 @@ namespace SzallodaFoglalo
 
         private void comboBox1_DropDownClosed(object sender, EventArgs e)
         {
+            dataGridView1.CellClick -= cell_click;
             cellaszinvissza();
             fileBeolvasasa();
             #region honap kivalasztasa
@@ -431,7 +432,7 @@ namespace SzallodaFoglalo
                 #endregion
             }
             #endregion
-            // dataGridView1.CellClick += cell_click;
+            dataGridView1.CellClick += cell_click;
             urescella();
         }
 
@@ -826,6 +827,8 @@ namespace SzallodaFoglalo
                 endCol = 0;
             }
             else {
+                enddate.Style.BackColor = Color.White;
+                startdate.Style.BackColor = Color.White;
                 enddate = null;
                 startdate = null;
                 startRow = 0;
