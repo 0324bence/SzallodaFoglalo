@@ -83,7 +83,7 @@ namespace SzallodaFoglalo
             #endregion
             comboBox2.SelectedIndexChanged += ujevek;
             comboBox1.SelectedIndexChanged += comboBox1_DropDownClosed;
-            dataGridView1.CellClick -= cell_click;
+            dataGridView1.CellClick += cell_click;
         }
 
         private void fileBeolvasasa()
@@ -431,7 +431,7 @@ namespace SzallodaFoglalo
                 #endregion
             }
             #endregion
-            dataGridView1.CellClick += cell_click;
+            // dataGridView1.CellClick += cell_click;
             urescella();
         }
 
@@ -675,12 +675,13 @@ namespace SzallodaFoglalo
                     Felugroablak();
                     startdate = null;
                     enddate = null;
+                    return;
                 }
                 else
                 {
                     startdate = null;
                     enddate = null;
-                    cell_click(sender, kivalasztott);
+                    //cell_click(sender, kivalasztott);
                 }
             }
             else
@@ -817,6 +818,12 @@ namespace SzallodaFoglalo
                 foglalasPrice.Font = new Font("Microsoft YaHei", 18);
                 this.Controls.Add(foglalasPrice);
                 #endregion
+                enddate = null;
+                startdate = null;
+                startRow = 0;
+                startCol = 0;
+                endRow = 0;
+                endCol = 0;
             }
             else {
                 enddate = null;
