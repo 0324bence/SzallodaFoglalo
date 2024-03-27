@@ -685,6 +685,15 @@ namespace SzallodaFoglalo
 
             System.Windows.Forms.TextBox foglaloneveBox = new System.Windows.Forms.TextBox();
             foglaloneveBox.Location = new Point(175, 45);
+            foglaloneveBox.TextChanged += (sender, e) =>
+            {
+                string input = foglaloneveBox.Text;
+                if (input.Replace(" ", "") != input)
+                {
+                    foglaloneveBox.Text = input.Replace(" ", "");
+                    foglaloneveBox.SelectionStart = foglaloneveBox.Text.Length;
+                }
+            };
             popupForm.Controls.Add(foglaloneveBox);
 
             System.Windows.Forms.ComboBox letszam = new System.Windows.Forms.ComboBox();
@@ -741,12 +750,12 @@ namespace SzallodaFoglalo
                 if (radioBtnZero.Checked)
                 {
                     reggeli = "0";
-                    reg = "kérek";
+                    reg = "Igen";
                 }
                 if (radioBtnOne.Checked)
                 {
                     reggeli = "1";
-                    reg = "Nem kérek";
+                    reg = "Nem";
                 }
 
                 StreamWriter ir = File.AppendText(fajlutvonal);
@@ -761,9 +770,9 @@ namespace SzallodaFoglalo
                 int szallaara = szallasara(erkez,tav,valasztottFo,reggeli);
                 Controls.RemoveByKey("foglalasPrice");
                 System.Windows.Forms.Label foglalasPrice = new System.Windows.Forms.Label();
-                foglalasPrice.Size = new Size(208, 258);
+                foglalasPrice.Size = new Size(233, 258);
                 foglalasPrice.Name = "foglalasPrice";
-                foglalasPrice.Text = $"Szállás ára:\n          {szallaara} Ft \n\nSzobaszám: {vszobaszam}\nÉrk.: {startdate.OwningRow.Cells[0].Value.ToString()}.{startdate.Value.ToString()}\nTáv.: {enddate.OwningRow.Cells[0].Value.ToString()}.{enddate.Value.ToString()}\nReggelit: {reg}\nLétszám: {valasztottFo}";
+                foglalasPrice.Text = $"Szállás ára:\n          {szallaara} Ft\n\nSzobaszám: {vszobaszam}\nÉrk.: {startdate.OwningRow.Cells[0].Value.ToString()}.{startdate.Value.ToString()}\nTáv.: {enddate.OwningRow.Cells[0].Value.ToString()}.{enddate.Value.ToString()}\nReggelit: {reg}\nLétszám: {valasztottFo}";
                 foglalasPrice.Location = new Point(12, 313);
                 IntPtr roundfoglalasPrice = CreateRoundRectRgn(0, 0, foglalasPrice.Width, foglalasPrice.Height, 5, 5);
                 foglalasPrice.Region = Region.FromHrgn(roundfoglalasPrice);

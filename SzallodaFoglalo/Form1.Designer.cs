@@ -82,9 +82,9 @@
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.dataGridView1.Location = new System.Drawing.Point(249, 21);
+            this.dataGridView1.Location = new System.Drawing.Point(270, 21);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1164, 267);
+            this.dataGridView1.Size = new System.Drawing.Size(1163, 268);
             this.dataGridView1.TabIndex = 0;
             // 
             // szabaszam
@@ -249,7 +249,7 @@
             this.panel4.Controls.Add(this.panel3);
             this.panel4.Controls.Add(this.statisztika);
             this.panel4.Controls.Add(this.panel1);
-            this.panel4.Location = new System.Drawing.Point(249, 313);
+            this.panel4.Location = new System.Drawing.Point(270, 313);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1163, 258);
             this.panel4.TabIndex = 0;
@@ -288,7 +288,7 @@
             this.valasztopanel.Controls.Add(this.szobapanel);
             this.valasztopanel.Location = new System.Drawing.Point(12, 21);
             this.valasztopanel.Name = "valasztopanel";
-            this.valasztopanel.Size = new System.Drawing.Size(208, 267);
+            this.valasztopanel.Size = new System.Drawing.Size(233, 267);
             this.valasztopanel.TabIndex = 6;
             // 
             // evekpanel
@@ -315,7 +315,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1424, 594);
+            this.ClientSize = new System.Drawing.Size(1444, 595);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.valasztopanel);
