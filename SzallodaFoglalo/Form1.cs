@@ -48,7 +48,7 @@ namespace SzallodaFoglalo
         #endregion
 
         string vszobaszam = "1";
-        int utolsoElem = 0;//D:\app\szalodaFoglalo\Lists\pitypang.txt C:\Users\NagyGabor1\Documents\GitHub\szalodaFoglalo\Lists\pitypang.txt
+        int utolsoElem = 0;
         string fajlutvonal = AppDomain.CurrentDomain.BaseDirectory + @"\Lists\pitypang.txt";
         string evjarat = "pitypang";
 
@@ -586,8 +586,7 @@ namespace SzallodaFoglalo
             
             
             if (dataGridView1.Rows[kivalasztott.RowIndex].Cells[kivalasztott.ColumnIndex].Style.BackColor != Color.FromArgb(245, 97, 105) &&
-                dataGridView1.Rows[kivalasztott.RowIndex].Cells[kivalasztott.ColumnIndex].Style.BackColor != Color.FromArgb(188, 223, 227)
-                )
+                dataGridView1.Rows[kivalasztott.RowIndex].Cells[kivalasztott.ColumnIndex].Style.BackColor != Color.FromArgb(188, 223, 227))
             {
                 if (startdate == null)
                 {
@@ -602,10 +601,9 @@ namespace SzallodaFoglalo
                     endRow = kivalasztott.RowIndex;
                     endCol = kivalasztott.ColumnIndex;
                     enddate.Style.BackColor = Color.Yellow;
-                    if (endCol < startCol || endRow < startRow) {
+                    if (endRow < startRow || (endRow == startRow && endCol < startCol)) {
                         int tempRow, tempCol;
-                        DataGridViewCell temp = null; 
-                        temp = enddate;
+                        DataGridViewCell temp = enddate; 
                         tempRow = endRow;
                         tempCol = endCol;
                         enddate = startdate;
@@ -1008,6 +1006,7 @@ namespace SzallodaFoglalo
             return nap;
         }
 
+        
         private void panelekkinezet()
         {
             IntPtr roundpanel1 = CreateRoundRectRgn(0, 0, panel1.Width, panel1.Height, 5, 5);
