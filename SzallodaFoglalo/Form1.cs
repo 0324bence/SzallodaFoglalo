@@ -1214,7 +1214,8 @@ namespace SzallodaFoglalo
                         adatok[i].tavoz > 31 &&
                         adatok[i].tavoz <= 59)
                     {
-                        jan += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 31);
+                        jan += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 31)+1;
+                        feb += adatok[i].eltoltnapok - (adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 31)) - 1;
                     }
                     #endregion
                     #region 02 feb
@@ -1233,7 +1234,8 @@ namespace SzallodaFoglalo
                         adatok[i].tavoz <= 90)
                     {
 
-                        feb += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 59);
+                        feb += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 59)+1;
+                        mar += adatok[i].eltoltnapok - (adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 59)) - 1;
                     }
                     #endregion
                     #region 03 mar
@@ -1252,7 +1254,8 @@ namespace SzallodaFoglalo
                         adatok[i].tavoz <= 120)
                     {
 
-                        mar += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 90);
+                        mar += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 90)+1;
+                        apr += adatok[i].eltoltnapok - (adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 90))-1;
                     }
                     #endregion
                     #region 04 apr
@@ -1271,7 +1274,8 @@ namespace SzallodaFoglalo
                         adatok[i].tavoz <= 151)
                     {
 
-                        apr += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 120);
+                        apr += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 120)+1;
+                        maj += adatok[i].eltoltnapok - (adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 120))-1;
                     }
                     #endregion
                     #region 05 maj
@@ -1290,7 +1294,8 @@ namespace SzallodaFoglalo
                         adatok[i].tavoz <= 181)
                     {
 
-                        maj += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 151);
+                        maj += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 151)+1;
+                        jun += adatok[i].eltoltnapok - (adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 151))-1;
                     }
                     #endregion
                     #region 06 jun
@@ -1309,7 +1314,8 @@ namespace SzallodaFoglalo
                         adatok[i].tavoz <= 212)
                     {
 
-                        jun += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 181);
+                        jun += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 181)+1;
+                        jul += adatok[i].eltoltnapok - (adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 181))-1;
                     }
                     #endregion
                     #region 07 jul
@@ -1328,7 +1334,8 @@ namespace SzallodaFoglalo
                         adatok[i].tavoz <= 243)
                     {
 
-                        jul += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 212);
+                        jul += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 212)+1;
+                        aug += adatok[i].eltoltnapok - (adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 212))-1;
                     }
                     #endregion
                     #region 08 aug
@@ -1347,7 +1354,8 @@ namespace SzallodaFoglalo
                         adatok[i].tavoz <= 273)
                     {
 
-                        aug += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 243);
+                        aug += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 243)+1;
+                        sep += adatok[i].eltoltnapok - (adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 243))-1;
                     }
                     #endregion
                     #region 09 sep
@@ -1366,7 +1374,8 @@ namespace SzallodaFoglalo
                         adatok[i].tavoz <= 304)
                     {
 
-                        sep += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 273);
+                        sep += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 273)+1;
+                        okt += adatok[i].eltoltnapok - (adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 273))-1;
                     }
                     #endregion
                     #region 10 okt
@@ -1385,7 +1394,8 @@ namespace SzallodaFoglalo
                         adatok[i].tavoz <= 334)
                     {
 
-                        okt += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 304);
+                        okt += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 304)+1;
+                        nov += adatok[i].eltoltnapok - (adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 304))-1;
                     }
                     #endregion
                     #region 11 nov
@@ -1404,7 +1414,8 @@ namespace SzallodaFoglalo
                         adatok[i].tavoz <= 365)
                     {
 
-                        nov += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 334);
+                        nov += adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 334)+1;
+                        dec += adatok[i].eltoltnapok - (adatok[i].eltoltnapok - Math.Abs(adatok[i].tavoz - 334))-1;
                     }
                     #endregion
                     #region 12 dec
